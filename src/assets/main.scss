@@ -1,0 +1,16 @@
+html, body, div, p, span, h1, h2, h3, h4, h5, h6, a, img, dl, dt, dd, ol, ul, li, form, table, caption, tr, th, td, article, aside, footer, header {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 110%;
+    vertical-align: baseline;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: #c24646;
+    background: linear-gradient(90deg, rgba(194, 70, 70, 1) 0%, rgba(209, 94, 71, 1) 24%, rgba(247, 203, 158, 1) 96%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
