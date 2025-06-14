@@ -1,33 +1,76 @@
-# WeatherApp
+# WeatherApp - приложение погоды с виджетом обновления
 
-This template should help get you started developing with Vue 3 in Vite.
+-- Простое приложение на Vue.js, которое позволяет узнать текущую погоду в любом городе. В проект встроен виджет с обратным отсчётом времени до запланированного обновления сайта.
 
-## Recommended IDE Setup
+## Особенности
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+-- Поиск погоды по названию города с использованием OpenWeatherMap API.
 
-## Type Support for `.vue` Imports in TS
+-- Отображение температуры, погодного состояния и описания.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+-- Виджет обратного отсчёта времени до обновления с возможностью переключения между полным отображением (дни, часы, минуты, секунды) и только днями.
 
-## Customize configuration
+-- Современный, приятный дизайн с использованием Vue 3 и TypeScript.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## Запуск проекта
 
-## Project Setup
+-- Клонировать репозиторий:
 
-```sh
+git clone https://github.com/your-username/weather-app.git
+cd weather-app
+
+-- Установить зависимости:
+
 npm install
-```
 
-### Compile and Hot-Reload for Development
+-- Запустить локально:
 
-```sh
-npm run dev
-```
+npm run serve
 
-### Type-Check, Compile and Minify for Production
 
-```sh
-npm run build
-```
+## Использование
+
+-- Введите название города (минимум 2 символа) в поле ввода.
+
+-- Нажмите кнопку «Узнать погоду».
+
+-- Приложение покажет текущую погоду.
+
+-- Наведение мыши на виджет обратного отсчёта переключит формат отображения времени.
+
+## Технологии
+
+-- Vue 3 + Options API
+
+-- TypeScript
+
+-- Axios для API запросов
+
+-- SCSS для стилей
+
+-- OpenWeatherMap API
+
+## Настройка
+
+-- Дату обновления для виджета можно изменить в файле src/assets/UpdateDate.ts.
+
+-- В файле App.vue замените API ключ OpenWeatherMap на свой:        appid=ВАШ_API_КЛЮЧ
+
+## Структура проекта
+
+src/
+├── assets/
+│   └── UpdateDate.ts
+├── components/
+│   └── UpdateWidget.vue
+├── App.vue
+└── main.ts
+
+## Лицензия
+
+-- Этот проект распространяется под лицензией MIT.
+
+## Автор
+
+Мирошниченко Алексей Владимирович
+GitHub: alekcmirniy
