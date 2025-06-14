@@ -59,12 +59,11 @@ npm run serve
 ## Структура проекта
 
 src/
-├── assets/
-│   └── UpdateDate.ts
-├── components/
-│   └── UpdateWidget.vue
-├── App.vue
-└── main.ts
+  ├─ assets/ (содержит UpdateDate.ts)
+  ├─ components/ (содержит UpdateWidget.vue)
+  ├─ App.vue
+  └─ main.ts
+
 
 ## Лицензия
 
