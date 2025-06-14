@@ -84,7 +84,7 @@ export default {
   box-shadow: 0 0 8px rgba(215, 109, 119, 0.7);
   user-select: none;
 
-  p {
+  p { 
     margin: 5px 0;
   }
 }
@@ -92,7 +92,7 @@ export default {
 .countdown {
   cursor: default;
   font-weight: 600;
-  font-size: 1.2em;
+  font-size: 1.1em;
   background: rgba(255, 255, 255, 0.15);
   border-radius: 8px;
   padding: 8px 12px;
