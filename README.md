@@ -1,79 +1,97 @@
-# WeatherApp - приложение погоды с виджетом обновления
+🌤️ WeatherApp
+A weather application with an update widget built on Vue.js that allows you to check current weather in any city. The project includes a widget with a countdown timer until the scheduled website update.
 
--- Простое приложение на Vue.js, которое позволяет узнать текущую погоду в любом городе. В проект встроен виджет с обратным отсчётом времени до запланированного обновления сайта.
+✨ Features
+Weather search by city name using OpenWeatherMap API
 
-## Особенности
+Display of temperature, weather conditions, and descriptions
 
--- Поиск погоды по названию города с использованием OpenWeatherMap API.
+Countdown widget with toggleable display formats (full time or days only)
 
--- Отображение температуры, погодного состояния и описания.
+Modern, clean design using Vue 3 and TypeScript
 
--- Виджет обратного отсчёта времени до обновления с возможностью переключения между полным отображением (дни, часы, минуты, секунды) и только днями.
+Responsive interface
 
--- Современный, приятный дизайн с использованием Vue 3 и TypeScript.
+🚀 Quick Start
+Clone and Install
 
-## Запуск проекта
+# Clone the repository
+  -git clone https://github.com/alekcmirniy/weather-app.git
+  -cd weather-app
 
--- Клонировать репозиторий:
+# Install dependencies
+  -npm install
+  
+Development
 
-git clone https://github.com/your-username/weather-app.git
-cd weather-app
+# Start local development server
+  -npm run serve
 
--- Установить зависимости:
+Production Build
 
-npm install
+# Build for production
+  -npm run build
+📖 How to Use
+Enter a city name (minimum 2 characters) in the input field
 
--- Запустить локально:
+Click the "Check Weather" button
 
-npm run serve
+The application will display current weather with detailed information
 
+🛠️ Technologies
+Vue 3 + Options API
 
-## Использование
+TypeScript - type safety and enhanced development
 
--- Введите название города (минимум 2 символа) в поле ввода.
+Axios - HTTP requests to APIs
 
--- Нажмите кнопку «Узнать погоду».
+SCSS - CSS preprocessor for styling
 
--- Приложение покажет текущую погоду.
+OpenWeatherMap API - weather data
 
--- Наведение мыши на виджет обратного отсчёта переключит формат отображения времени.
+⚙️ Configuration
+OpenWeatherMap API Key
+Get a free API key from openweathermap.org
 
-## Технологии
+Replace the key in src/App.vue:
 
--- Vue 3 + Options API
+appid=YOUR_API_KEY
+Update Date
+Modify the update date for the widget in src/assets/UpdateDate.ts:
 
--- TypeScript
+export const updateDate = new Date('2024-01-01T00:00:00'); // Your date here
 
--- Axios для API запросов
-
--- SCSS для стилей
-
--- OpenWeatherMap API
-
-## Настройка
-
--- Дату обновления для виджета можно изменить в файле src/assets/UpdateDate.ts.
-
--- В файле App.vue замените API ключ OpenWeatherMap на свой:        appid=ВАШ_API_КЛЮЧ
-
-## Структура проекта
-
+📁 Project Structure
+text
 src/
+├── assets/
+│   ├── UpdateDate.ts          # Update date configuration
+│   └── main.scss              # SCSS styles (added for organization)
+├── components/
+│   ├── UpdateWidget.vue       # Countdown widget component
+├── App.vue                  # Main application component
+└── main.ts                 # Application entry point
 
-  ├─ assets/ (содержит UpdateDate.ts)
-  
-  ├─ components/ (содержит UpdateWidget.vue)
-  
-  ├─ App.vue
-  
-  └─ main.ts
+📝 Available Scripts
+npm run serve - start development server
+
+npm run build - build for production
 
 
-## Лицензия
+🌐 Live Demo
+Application Demo (if deployed to GitHub Pages)
 
--- Этот проект распространяется под лицензией MIT.
+🤝 Contributing
+Contributions are welcome! Feel free to fork this project and submit pull requests. For major changes, please open an issue first to discuss what you would like to change.
 
-## Автор
+📄 License
+This project is distributed under the MIT License. See the LICENSE file for details.
 
-Мирошниченко Алексей Владимирович
+👨‍💻 Author
+Alexey Miroshnichenko
+
 GitHub: alekcmirniy
+
+Project: WeatherApp
+
+An OpenWeatherMap API key is required for the application to function. Get a free key at openweathermap.org.
